@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: url("images/bg_img.jpg");
+  background-color: #cccccc;
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+</style>
+</head>
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Adversarial example for neural network</h1>
+    <h3 style="font-size:30px">IJCAI-19 </h3>
+    <div class="container">
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Untargeted attack
+    </button>
+    <div class="dropdown-menu" >
+      <a class="dropdown-item" href="spatial_pgd.html">Spatial+PGD</a>
+      <a class="dropdown-item" href="fgs.html">FGS</a>
+      <a class="dropdown-item" href="cwopt.html">CWOPT</a>
+    </div>
+  </div>
+    <div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Targeted attack
+    </button>
+    <div class="dropdown-menu" >
+      <a class="dropdown-item" href="pgd_adam_mask.html">PGD+Adam+Mask</a>
+      <a class="dropdown-item" href="pgd_mom_mask.html">PGD+Momentum+Mask</a>
+      <a class="dropdown-item" href="pgd_mom_mask_early_stop.html">PGD+Momentum+Earlystop</a>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+<p>Done by Tiansu Chen and Chaofan Sun</p>
+<p>Final presentation result of EECS-6895</p>
+
+</body>
+</html>
